@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+:root {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio-header {
+    background-color: #F3CF92;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    width: 100%;
+    }
+
+.header-container {
+    background: radial-gradient(circle, #FAEFD7, #F3CF92);
+    display: flex;
+    min-height: 145px;
+    width: 1540px;
+    flex-direction: column;
+    align-items: start;
+    font-family: "Balsamiq Sans", sans-serif;
+    color: #000;
+    font-weight: 700;
+    justify-content: center;
+    padding: 47px 37px;
+    }
+
+.nav-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1352px;
+    gap: 40px 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+
+.brand-title {
+    width: 250px;
+    }
+
+.nav-menu {
+    font-family: "Balsamiq Sans", serif;
+    display: flex;
+    min-width: 440px;
+    align-items: center;
+    gap: 40px 81px;
+    font-size: 16px;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin: auto 0;
+    }
+
+.nav-link {
+    font-family: "Balsamiq Sans", serif;
+    border-radius: 10px;
+    background-color: #D7B980;
+    padding: 16px;
+    color: #000;
+    text-decoration: none;
+    }
+
+.nav-link:hover,
+.nav-link:focus {
+    background-color: #B79453;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+
+.projects-section {
+    display: flex;
+    margin-top: 28px;
+    height: 802px;
+    width: 1226px;
+    max-width: 100%;
+    flex-direction: column;
+    }
+
+.section-title {
+    color: #ffffff;
+    text-align: center;
+    font: 64px "Margarine", sans-serif;
+    }
+
+.projects-grid {
+    display: flex;
+    margin-top: 36px;
+    min-height: 715px;
+    width: 100%;
+    align-items: center;
+    gap: 40px 58px;
+    flex-wrap: wrap;
+    }
+
+.project-card {
+    align-self: stretch;
+    position: relative;
+    display: flex;
+    min-width: 240px;
+    min-height: 625px;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 296px;
+    margin: auto 0;
+    }
+
+.project-image {
+    aspect-ratio: 0.78;
+    object-fit: contain;
+    width: 100%;
+    border-radius: 20px;
+    z-index: 0;
+    box-shadow: 7px -1px #0000002a;
+    }
+
+.project-title {
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 213px;
+    transform: translate(-50%, 0);
+    width: 336px;
+    font: 36px "Margarine", sans-serif;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: .5s;
+    }
+
+    .project-link {
+        text-decoration: none;
+        color: inherit;
+        transition: color 0.3s ease;
+    }
+
+
+    .project-card:hover .project-title {
+        opacity: 1;
+    }
+
+.project-description {
+    color: #ffffff;
+    margin-top: 33px;
+    font-family: "Balsamiq Sans", sans-serif;
+    font-size: 18px;
+}
